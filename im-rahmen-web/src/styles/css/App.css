@@ -1,0 +1,750 @@
+/** SCROLLBAR **/
+/** LOGIN SCREEN */
+/** BASE **/
+/** SIDE BAR **/
+/** MAIN CONTENT **/
+/** ARTWORK TAB **/
+/** BEACONS TAB **/
+/** GAMES **/
+/** MORE OPTIONS DROP DOWN **/
+* {
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: "Roboto Regular", sans-serif; }
+  *:focus {
+    outline: 0; }
+
+*::-webkit-scrollbar {
+  width: 0.4375rem; }
+
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    inset 0 0 6px rgba(0, 0, 0, 0.3);  /* Firefox 3.5 - 3.6 */
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+
+*::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey; }
+
+body {
+  font-size: 1rem;
+  background: #ffffff url("./../../images/galerie.jpg") no-repeat 0 7.875rem; }
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+  -moz-box-shadow: 0 0 0 30px white inset;
+  box-shadow: 0 0 0 30px white inset; }
+
+/* MAIN NAV BAR ------------------------------------------------------------------------*/
+#main-nav-bar {
+  height: 3.5rem;
+  background-color: #41c19a;
+  color: #ffffff; }
+
+.logo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 15rem; }
+
+.logo p {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 80;
+  margin-top: 0.75rem;
+  margin-left: 1rem; }
+
+.logo img {
+  float: left;
+  margin-top: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem; }
+
+/* EDITOR NAV BAR ------------------------------------------------------------------------*/
+#editor-nav-bar-container {
+  margin-top: 0;
+  height: 4.375rem;
+  background-color: #ffffff; }
+
+#editor-nav-bar {
+  height: 2.625rem;
+  color: #808080;
+  font-size: 0.875rem;
+  width: 65.625rem; }
+
+.editor-nav-bar__a {
+  margin-top: 1.75rem;
+  display: inline-block;
+  width: 8.75rem;
+  height: 2.625rem;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 2.625rem; }
+  .editor-nav-bar__a:hover {
+    background-color: #808080;
+    color: #ffffff; }
+
+.editor-nav-bar__a--active {
+  background-color: #41c19a;
+  color: #ffffff; }
+
+/* EDITOR DROP DOWN NAV ------------------------------------------------------------------------*/
+.drop-down-nav__a {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: block;
+  height: 2.625rem;
+  line-height: 2.625rem;
+  background-color: #ffffff;
+  color: #808080; }
+
+.drop-down-nav__a:hover {
+  background-color: #808080;
+  color: #ffffff; }
+
+/* EDITOR MAIN CONTENT ---------------------------------------------------------------------*/
+#editor-main-content {
+  width: 65.625rem; }
+
+/* SEARCH FIELD ---------------------------------------------------------------------*/
+#search-field {
+  border: 1px solid #ffffff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border-radius: 0;
+  opacity: 0.75;
+  font-size: 0.875rem;
+  margin: 1.75rem 0 1.75rem 0;
+  background: url(../../icons/search_icon.svg) no-repeat scroll 1.3125rem 0.65625rem #ffffff;
+  padding: 1rem 1rem 1rem 5rem;
+  width: 20.25rem;
+  height: 0.625rem; }
+
+#search-field:focus {
+  border: 1px solid #333333;
+  opacity: 1; }
+
+/* GENERAL ---------------------------------------------------------------------------------*/
+.center {
+  margin: auto; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.hidden {
+  visibility: hidden; }
+
+.visible {
+  visibility: visible; }
+
+.inner {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.clear {
+  clear: both; }
+
+.font-color-main {
+  color: #41c19a; }
+
+.no-margin-left {
+  margin-left: 0; }
+
+.login-form {
+  background: rgba(255, 255, 255, 0.75);
+  margin: 0 auto;
+  margin-top: 6.125rem;
+  width: 21.875rem;
+  min-height: 21.875rem;
+  padding: 1.75rem;
+  font-family: "Roboto Regular", sans-serif; }
+
+.login-form__welcome {
+  font-size: 1.20312rem;
+  color: #333333;
+  font-family: "Roboto Regular", sans-serif; }
+
+.login-form__info-text {
+  font-size: 0.76562rem;
+  color: #333333;
+  font-family: "Roboto Regular", sans-serif;
+  margin: 0.54688rem 0 1.75rem 0; }
+
+.login-form__info-text-wrong-login {
+  font-size: 0.76562rem;
+  color: #FF0000;
+  font-family: "Roboto Regular", sans-serif;
+  padding: 14px;
+  padding-left: 12px;
+  margin-bottom: 1.75rem;
+  background-color: #FFCCCC; }
+
+.login-form__input-field {
+  margin: 0;
+  margin-bottom: 1.75rem;
+  padding: 12px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 0.875rem;
+  border: 1px solid #333333;
+  color: #333333;
+  background-color: rgba(255, 255, 255, 0); }
+  .login-form__input-field:focus {
+    background-color: #FFFFFF; }
+  .login-form__input-field::placeholder {
+    color: #808080;
+    font-size: 0.875rem; }
+
+.login-form__input-field-password-div {
+  margin: 0;
+  margin-bottom: 1.75rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 0.875rem;
+  border: 1px solid #333333;
+  color: #333333;
+  background-color: white;
+  display: flex;
+  justify-content: space-between; }
+
+.login-form__input-field-password {
+  padding: 12px; }
+  .login-form__input-field-password:focus {
+    background-color: #FFFFFF; }
+  .login-form__input-field-password::placeholder {
+    color: #808080;
+    font-size: 0.875rem; }
+
+.login-form__show-password-button:hover .eye-image {
+  fill: #808080; }
+
+.login-form__show-password-button:active {
+  background: #808080; }
+  .login-form__show-password-button:active .eye-image {
+    fill: #ffffff; }
+
+.eye-image {
+  margin-top: 3px;
+  padding-left: 12px;
+  padding-right: 12px;
+  fill: "#333333";
+  height: 1.2rem; }
+
+#login-form__wrong-mail-address {
+  margin: -1.75rem 0 0.88438rem 12px;
+  font-size: 0.76562rem;
+  color: #FF0000; }
+
+.login-form__button {
+  border: 1px solid #41C19A;
+  color: #41C19A;
+  border-radius: 0;
+  margin: 0;
+  padding: 12px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 0.875rem;
+  background-color: rgba(255, 255, 255, 0); }
+  .login-form__button:hover:enabled {
+    background-color: #41C19A;
+    color: #ffffff; }
+  .login-form__button:disabled {
+    border: 1px solid #CECED1;
+    color: #CECED1; }
+
+.login-form__forgot-password {
+  margin-top: 0.98438rem;
+  color: #41C19A;
+  font-size: 0.76562rem;
+  margin-bottom: 1rem; }
+  .login-form__forgot-password:hover {
+    text-decoration: underline; }
+
+#login-form__reset-sent-info {
+  font-size: 0.76562rem;
+  margin-bottom: 1rem; }
+
+.wrong-password-input {
+  border: 1px solid #FF0000; }
+
+.wrong-password-text {
+  color: red; }
+
+/* MAIN CONTENT ------------------------------------------------------------------------*/
+#main-content {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 40rem;
+  background-color: rgba(255, 255, 255, 0.75);
+  display: block;
+  color: #333333; }
+
+/* LIST ------------------------------------------------------------------------*/
+.list-container {
+  float: left;
+  box-sizing: border-box;
+  width: 26.25rem;
+  border-right: 1px solid #ceced1;
+  min-height: 40rem;
+  max-height: 40rem;
+  overflow-y: scroll; }
+
+.list-container-version {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 40rem;
+  max-height: 40rem; }
+
+.list-container__add-element {
+  height: 3.5rem; }
+  .list-container__add-element:hover {
+    background-color: #808080; }
+    .list-container__add-element:hover .list-container__add-element-image {
+      fill: #ffffff; }
+    .list-container__add-element:hover .list-container__add-element-image-games {
+      fill: #ffffff; }
+    .list-container__add-element:hover .list-container__add-element-text {
+      color: #ffffff; }
+
+.list-container__add-element-image {
+  height: 1.3125rem;
+  margin: 0 1.75rem 0 1.3125rem;
+  fill: #333333; }
+
+.list-container__add-element-text {
+  font-size: 0.76562rem;
+  color: #333333; }
+
+.list-container-games {
+  float: left;
+  width: 39.375rem;
+  margin-left: -2.625rem; }
+
+.list-container__add-element-image-games {
+  height: 1.3125rem;
+  margin: 0 1.75rem 0 2.625rem;
+  fill: #333333; }
+
+/* LIST ELEMENT ------------------------------------------------------------------------*/
+.list__li {
+  height: 3.0625rem;
+  clear: both;
+  list-style: none; }
+
+.list__li-version {
+  height: 3.0625rem;
+  clear: both;
+  list-style: none; }
+
+.list__li--active {
+  background-color: #ccccccc0; }
+
+li.list__li:hover {
+  background-color: #808080;
+  color: #ffffff; }
+  li.list__li:hover .list__game-element--more-options-button--image {
+    fill: #ffffff; }
+  li.list__li:hover .list__circle--image, li.list__li:hover .list__circle--image-selected {
+    fill: #ffffff; }
+
+.list__circle {
+  height: 1.3125rem;
+  width: 1.3125rem;
+  margin-left: 1.3125rem; }
+
+.list__circle--image:hover {
+  fill: #41c19a !important; }
+
+.list__circle-games {
+  height: 1.3125rem;
+  width: 1.3125rem;
+  margin-left: 2.625rem; }
+
+.list__image {
+  height: 2.625rem;
+  width: 2.625rem;
+  background-position: center center;
+  background-size: cover;
+  margin-left: 1.75rem; }
+
+.list__image-version {
+  height: 2.625rem;
+  width: 2.625rem;
+  background-position: center center;
+  background-size: cover;
+  margin-left: 0; }
+
+.list__element-text {
+  margin-left: 1.75rem; }
+
+.list__element-text-version {
+  margin-left: 1.75rem;
+  width: 9.625rem;
+  display: inline-block; }
+
+.list__element-text-version--beacon {
+  margin-left: 1.75rem;
+  width: 5.25rem;
+  display: inline-block; }
+
+.list__element-name {
+  font-size: 0.875rem;
+  margin-bottom: 0.125rem; }
+
+.list__element-major {
+  font-size: 0.76562rem; }
+
+/* BEACON IMAGE LIST ------------------------------------------------------------------------*/
+.beacon-image-list__front {
+  margin-left: -2.625rem;
+  height: 2.625rem; }
+
+/* CONTENT DETAIL ------------------------------------------------------------------------*/
+.main-content__detail {
+  width: 39.375rem;
+  box-sizing: border-box;
+  float: left;
+  padding: 3.5rem 2.84375rem 2.625rem 2.625rem;
+  min-height: 40rem;
+  max-height: 40rem;
+  overflow-y: scroll;
+  overflow-x: hidden; }
+
+.main-content__detail-info-part {
+  margin-right: 2.84375rem;
+  margin-bottom: 0.875rem;
+  width: 100%; }
+
+.main-content__new-game-text {
+  vertical-align: middle; }
+
+.main-content__new-game-image {
+  vertical-align: middle; }
+
+.main-content__more-options-button {
+  width: 1.3125rem;
+  height: 1.3125rem; }
+  .main-content__more-options-button:hover .main-content__more-options-button--image {
+    fill: #333333; }
+
+.main-content__more-options-button--image {
+  fill: #808080; }
+
+#more-options-drop-down {
+  margin-top: 0.875rem; }
+
+.more-options-drop-down__element {
+  position: relative;
+  width: 10.9375rem;
+  height: 3.5rem;
+  background-color: #ffffff;
+  color: #333333;
+  line-height: 3.5rem;
+  padding-left: 0.875rem;
+  font-size: 0.875rem;
+  margin-left: -9.625rem; }
+  .more-options-drop-down__element:hover {
+    background-color: #808080;
+    color: #ffffff; }
+
+/* BEACON IMAGE CONTENT ------------------------------------------------------------------------*/
+.beacon-image__front {
+  margin-left: -10.5rem;
+  height: 10.5rem;
+  width: 10.5rem; }
+
+.beacon-image__change-button {
+  position: absolute;
+  width: 10.5rem;
+  height: 2.625rem;
+  margin-top: 9rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  font-size: 0.875rem; }
+
+.beacon-image__change-button p {
+  color: #41c19a;
+  width: 10.5rem;
+  text-align: center; }
+
+/* INPUT FORM ------------------------------------------------------------------------*/
+.input-form {
+  margin-left: 12.25rem;
+  font-size: 0.875rem;
+  width: fit-content; }
+
+.input-form p {
+  width: 5.25rem;
+  display: inline-block;
+  margin-bottom: 0.875rem;
+  font-size: 0.875rem; }
+
+.input-form input {
+  width: 12.25rem;
+  display: inline-block;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font-size: 0.875rem; }
+  .input-form input:enabled {
+    border-bottom: 1px solid #bfbfbf; }
+  .input-form input:hover:enabled {
+    border-bottom: 1px solid #808080; }
+  .input-form input:focus {
+    border-bottom: 1px solid #41c19a; }
+  .input-form input::placeholder {
+    color: #bbbbbb; }
+
+.game-input-form {
+  margin-left: 12.25rem;
+  font-size: 0.875rem;
+  width: fit-content; }
+  .game-input-form p {
+    width: 5.25rem;
+    display: inline-block;
+    margin-bottom: 0.875rem;
+    font-size: 0.875rem; }
+  .game-input-form input {
+    width: 22.3125rem;
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-size: 0.875rem; }
+    .game-input-form input:enabled {
+      border-bottom: 1px solid #bfbfbf; }
+    .game-input-form input:hover:enabled {
+      border-bottom: 1px solid #808080; }
+    .game-input-form input:focus {
+      border-bottom: 1px solid #41c19a; }
+    .game-input-form input::placeholder {
+      color: #bbbbbb; }
+
+.input-form_bottom-part {
+  margin-top: 0.875rem;
+  width: 100%; }
+
+.input-form_bottom-part p {
+  width: 5.25rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  margin-left: 0.25rem; }
+
+.input-form_bottom-part textarea {
+  border: 1px solid #bfbfbf;
+  background: transparent;
+  font-size: 0.875rem;
+  padding: 0.25rem;
+  width: 100%;
+  box-sizing: border-box; }
+
+.input-form__submit-button {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background: transparent;
+  font-size: 0.875rem;
+  color: #41c19a;
+  height: 2.625rem;
+  border: 1px solid #41c19a; }
+  .input-form__submit-button:hover {
+    background-color: #41c19a;
+    color: white; }
+
+/* CONTENT FORM ------------------------------------------------------------------------*/
+.content-form {
+  margin-left: 12.25rem;
+  font-size: 0.875rem; }
+
+.content-form-version {
+  margin-left: 0;
+  font-size: 0.875rem; }
+  .content-form-version p {
+    display: inline-block; }
+
+.content-form p {
+  display: inline-block; }
+
+.content-form__key {
+  font-size: 0.875rem;
+  width: 5.25rem;
+  margin-bottom: 0.875rem;
+  vertical-align: top; }
+
+.content-form__value {
+  width: 12.25rem;
+  margin-bottom: 0.875rem; }
+
+.content-form__info-value {
+  font-size: 0.875rem;
+  text-align: justify;
+  margin-bottom: 0.875rem; }
+
+/* BEACON DROP DOWN LIST ------------------------------------------------------------------------*/
+.beacon-drop-down-list__container {
+  margin-top: -3.3rem;
+  position: absolute;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+  z-index: 500; }
+
+.beacon-drop-down-list {
+  width: 12rem;
+  height: 2rem;
+  background-color: #ffffff;
+  border-bottom: solid 1px #ffffff;
+  list-style: none; }
+
+.beacon-drop-down-list:hover {
+  background-color: #808080;
+  color: #ffffff; }
+
+.beacon-drop-down-list--active {
+  width: 12rem;
+  height: 2rem;
+  background-color: #ceced1;
+  border-bottom: solid 1px #ffffff;
+  list-style: none; }
+
+.beacon-drop-down-list p, .beacon-drop-down-list--active p {
+  margin-left: 3rem; }
+
+.beacon-drop-down-list__color-square {
+  height: 2rem;
+  width: 2rem;
+  border-right: solid 1px #ffffff;
+  float: left; }
+
+/* ARTWORK IMAGE UPLOAD */
+.artwork-image__container {
+  position: relative;
+  font-size: 0.875rem;
+  text-align: center;
+  color: #333333;
+  line-height: 10rem; }
+
+.artwork-image__image {
+  width: 10.5rem;
+  height: 10.5rem;
+  background-position: center center;
+  background-size: cover; }
+
+.artwork_image__button-container {
+  margin-top: 0.2rem; }
+
+.artwork-image__file-input {
+  left: 0;
+  position: absolute;
+  opacity: 0;
+  padding: 0.6rem;
+  width: 10rem;
+  box-sizing: border-box; }
+
+.input-form__change-image-button {
+  font-size: 0.875rem;
+  color: #41c19a;
+  padding: 0.4rem;
+  width: 10rem;
+  text-align: center;
+  display: block;
+  background: transparent; }
+  .input-form__change-image-button:disabled {
+    color: #CECED1; }
+
+/** ARTWORK NEW GAME **/
+.list__game-element--more-options-button {
+  width: 1.3125rem;
+  height: 1.3125rem; }
+
+.list__game-element--more-options-button--image {
+  fill: #808080; }
+
+.game-detail__container {
+  margin: 1.75rem 6.125rem 1.75rem 5.6875rem;
+  position: relative; }
+  .game-detail__container p {
+    display: inline-block;
+    font-size: 0.875rem; }
+
+.content-form__value-games {
+  width: 22.3125rem;
+  margin-bottom: 0.875rem; }
+
+/** DROP DOWN **/
+.drop-down-list__container--artworks-beacon {
+  height: 12rem;
+  overflow-y: scroll;
+  margin-top: 12.3375rem;
+  margin-left: 17.5rem;
+  position: absolute;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+  z-index: 500; }
+
+/** DROP DOWN **/
+.drop-down-list__container--games-gametype {
+  height: 12rem;
+  overflow-y: scroll;
+  margin-top: 1rem;
+  margin-left: 5.25rem;
+  position: absolute;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+  z-index: 500; }
+
+.drop-down-list__container--games-time {
+  height: 6rem;
+  overflow-y: scroll;
+  margin-top: 3rem;
+  margin-left: 5.25rem;
+  position: absolute;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+  z-index: 500; }
+
+.drop-down-list__container--games-trueOrFalse {
+  height: 4rem;
+  overflow-y: scroll;
+  margin-top: 3rem;
+  margin-left: 5.25rem;
+  position: absolute;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+  z-index: 500; }
+
+.drop-down-list {
+  width: 13.05rem;
+  height: 2rem;
+  padding-left: 1rem;
+  background-color: #ffffff;
+  border-bottom: solid 1px #ffffff;
+  list-style: none;
+  font-size: 0.875rem; }
+  .drop-down-list--active {
+    background-color: #ceced1;
+    border-bottom: solid 1px #ffffff;
+    list-style: none; }
+  .drop-down-list:hover {
+    background-color: #808080;
+    color: #ffffff; }
+
+.game-input-form__horizontal-separator {
+  height: 1px;
+  background-color: #ceced1;
+  width: 100%; }

@@ -1,0 +1,6 @@
+framework module Pods_ImRahmenUITests {
+  umbrella header "Pods-ImRahmenUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

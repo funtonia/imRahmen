@@ -1,0 +1,200 @@
+body,
+html {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+
+}
+
+label {
+    font-size: 2em;
+}
+
+button {}
+
+a {
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.headerTop {
+    background-color: #41c19a;
+    color: white;
+    font-size: 2em;
+    height: 100px;
+    width: 100%;
+}
+
+
+.boxTeamContent {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    bottom: 2em;
+    left: 0;
+    display: none;
+    background-image: url("img/HG-test-platzhalter.png");
+    background-position: center;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.centerHeading{
+    text-align: center;
+    font-weight: bold;
+}
+
+.leftHeading{
+    text-align: left;
+    font-weight: bold;
+}
+
+
+
+.boxAppContent {
+    display: none;
+    background-image: url("img/galerie.jpg");
+    background-position: center;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    bottom: 2em;
+    left: 0;
+}
+
+.boxEditorContent {
+    display: none;
+    background-image: url("img/galerie-hg.png");
+    background-position: center;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    bottom: 2em;
+    left: 0;
+}
+
+.people {
+    background-image: url("img/menschen.png");
+    background-position: right;
+    background-color: rgba(0, 0, 0, 0.0);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.boxMemberInfo {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background-color: rgba(0, 0, 0, 0.2);*/
+    padding-left: 20%;
+    padding-top: 30px;
+
+}
+
+
+.btn {
+    padding: 0;
+    overflow: hidden;
+    border-width: 0;
+    outline: none;
+    background-color: #41c19a;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.4em;
+    margin-left: 30px;
+
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn > * {
+    position: relative;
+}
+
+.btn span {
+    display: block;
+    padding: 12px 24px;
+}
+
+
+
+
+.left-right {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    clear: left;
+    left: 0%;
+}
+
+div.boxMember1,
+div.boxMember2,
+div.boxMember3,
+div.boxMember4,
+div.boxMember5,
+div.boxMember6 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    color: #fff;
+    background-image: url("img/HG-test-platzhalter.png");
+    background-position: top;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+a.boxMember1,
+a.boxMember2,
+a.boxMember3,
+a.boxMember4,
+a.boxMember5,
+a.boxMember6 {
+    display: block;
+    float: left;
+    cursor: pointer;
+    border-right: 2px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    background-color: white;
+    background-image: none;
+    vertical-align: middle;
+}
+
+a:hover {
+    opacity: 1
+}
+
+.boxMember1 {}
+
+.boxMember2 {}
+
+.boxMember3 {}
+
+.boxMember4 {}
+
+.boxMember5 {}
+
+.boxMember6 {}

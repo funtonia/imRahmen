@@ -1,0 +1,10 @@
+<svg id="icons_export" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+    <defs>
+        <style>.cls-1{fill:#bfbfbf;}.cls-2{opacity:0.5;}</style>
+    </defs>
+    <title>image_placeholder_6em</title>
+    <path class="cls-1" d="M94,2V94H2V2H94m2-2H0V96H96V0Z"/>
+    <g class="cls-2"><polygon class="cls-1" points="80 40 60 60 28 28 0 56 0 96 30 96 90 96 96 96 96 56 80 40"/>
+        <circle class="cls-1" cx="62" cy="18" r="10"/>
+    </g>
+</svg>

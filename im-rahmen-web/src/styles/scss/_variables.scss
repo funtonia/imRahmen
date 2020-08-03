@@ -1,0 +1,146 @@
+// Specs * 0.875 = die hier gebrauchte Größe
+
+$factor: 0.875;
+
+// font-sizes
+$font-s: 0.875rem * $factor;      // 0.875 in den Specs
+$font-m: 1.0rem * $factor;        // 1.0 in den Specs
+$font-l: 1.375rem * $factor;      // 1.375 in den Specs
+
+// fonts
+$font-text: "Roboto Regular", sans-serif;
+
+// screen sizes
+$screen-xl: 1400px;
+$screen-lg: 1200px;
+$screen-md: 992px;
+$screen-sm: 768px;
+$screen-xs: 568px;
+$screen-2xs: 375px;
+$screen-3xs: 320px;
+
+// paddings 
+$padding-xs: 0.75rem * $factor;
+$padding-s: 0.85rem * $factor;  
+$padding-sssm: 1rem * $factor;           // 0.85 in den Specs 
+$padding-ssm: 1.125rem * $factor;          // 1.125 in den Specs 
+$padding-sm: 2.0rem * $factor;            // 2.0 in den Specs            
+
+// colors 
+$color-main:  #41c19a; 
+$color-white: #ffffff; 
+$color-white-transparent:  rgba(255, 255, 255, 0.75);
+$color-white-transparent-button:  rgba(255, 255, 255, 0.85);
+$color-black: #000000; 
+$color-grey-nav-bar: #808080;
+$color-grey-font-content: #333333;
+$color-grey-focus: #ceced1;
+$color-light-grey: #bbbbbb; 
+$color-dark-grey: #444444;
+$color-input-line: #bfbfbf;
+
+/** SCROLLBAR **/
+$scrollbar--width: 0.5rem * $factor;
+
+/** LOGIN SCREEN */
+$login-width: 25.0rem * $factor;
+
+$margin-login__top: 7.0rem * $factor;
+
+// keine gültige mail-adresse label
+$margin-login__incorrect-mail-top: -$padding-sm;
+$margin-login__incorrect-mail-bottom: $padding-sm - $font-s - 0.1rem;
+
+$margin-login__forgot-password-bottom: 1rem;
+
+$padding-login: $padding-sm;
+$padding-login__welcome-bottom: 0.625rem * $factor;
+$padding-login__button-bottom: 1.125rem * $factor; 
+
+
+/** BASE **/
+$main-nav-bar-height: 4rem * $factor;
+
+$sidebar-width: 30rem * $factor;
+$content-width: 45rem * $factor;
+
+$editor-bar-width: $sidebar-width + $content-width;
+$editor-bar-height: 5rem * $factor;
+
+$editor-bar__elements-height: 3rem * $factor;
+$editor-bar__elements-margin-top: $editor-bar-height - $editor-bar__elements-height;
+$editor-bar__element-width: 10rem * $factor;
+
+$background-image__margin-top: $editor-bar-height + $main-nav-bar-height;
+
+$input-form__submit-button--width: 8rem * $factor;
+$input-form__submit-button--height: 3rem * $factor;
+
+// searchfield
+$searchfield__icon--margin: $padding-xs;
+$searchfield__icon--height: 1.5rem * $factor;
+
+$searchfield--padding-top: 1rem;
+$searchfield--padding-left: 5rem;
+
+$searchfield--height: (3rem * $factor) - 2 * $searchfield--padding-top;
+$searchfield--width: $sidebar-width - $searchfield--padding-top - $searchfield--padding-left;
+
+/** SIDE BAR **/
+$new-element--height: 4rem * $factor;
+$new-element__image--height: 1.5rem * $factor;
+$new-element__image--margin-left: 1.5rem * $factor;
+
+$list-element--height: 3.5rem * $factor;
+$list-element__circle--height: 1.5rem * $factor;
+$list-element__circle--margin-left: 1.5rem * $factor;
+
+$list-element__image--height: 3rem * $factor;
+
+/** MAIN CONTENT **/ 
+$main-content--padding-top: 4rem * $factor;
+$main-content--padding-left: 3rem * $factor;
+$main-content--padding-right: 3.25rem * $factor; 
+$main-content--padding-bottom: 3.0rem * $factor;
+$main-content--width: $content-width;
+$main-content__more-options--margin-left: 37.25rem * $factor;
+
+
+/** ARTWORK TAB **/
+$artwork__image--height: 12rem * $factor;
+
+$main-content__content-form--margin-left: $artwork__image--height + $padding-sm;
+$main-content__content-form-key--width: 6rem * $factor;
+$main-content__content-form-key--margin-bottom: 1rem * $factor;
+$main-content__content-form-value--width: 14rem * $factor;
+
+$main-content__add-games--padding-left: 3rem * $factor;
+
+$artwork__select-beacon-dropdown--margin-left: 20rem * $factor; 
+$artwork__select-beacon-dropdown--margin-top: 14.1rem * $factor;
+
+/** BEACONS TAB **/
+$beacon-list__image--height: 3rem * $factor;
+$beacon-content__image--height: 12rem * $factor;
+$beacon-content__change-color-button--height: 3rem * $factor;
+
+
+/** GAMES **/
+$game-content__container--margin-top: 2rem * $factor;
+$game-content__container--margin-left: 6.5rem * $factor;
+$game-content__container--margin-right: 7rem * $factor;
+
+$game-content__content-form-value--width: 25.5rem * $factor;
+
+$game-content-form__select-type-dropdown--margin-top: 1rem;
+$game-content-form__select-time-dropdown--margin-top: 3rem;
+$game-content-form__select-type-dropdown--margin-left: 6rem * $factor;
+
+$main-content__content-form-game-value--width: 25.5rem * $factor;
+
+/** MORE OPTIONS DROP DOWN **/
+$more-options-drop-down__element--width: 12.5rem * $factor;
+$more-options-drop-down__element--height: 4rem * $factor;
+
+$more-options-drop-down--margin-top: 1rem * $factor;
+$more-options-drop-down--margin-left: -11rem * $factor;

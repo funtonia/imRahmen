@@ -1,0 +1,179 @@
+* {
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  &:focus {outline:0;}
+  font-family: $font-text;  
+}
+
+*::-webkit-scrollbar {
+  width: $scrollbar--width;
+}
+
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+*::-webkit-scrollbar-thumb {
+background-color: darkgrey;
+outline: 1px solid slategrey;
+}
+
+body {
+  font-size: 1rem;
+  background: #ffffff url("./../../images/galerie.jpg") no-repeat 0 $background-image__margin-top;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+/* MAIN NAV BAR ------------------------------------------------------------------------*/
+
+#main-nav-bar {
+  height: $main-nav-bar-height;
+  background-color: $color-main;
+  color: $color-white;
+}
+
+.logo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 15rem;
+}
+
+.logo p {
+  display: inline-block;
+  color: $color-white;
+  font-size: 1.8rem;
+  font-weight: 80;
+  margin-top: 0.75rem;
+  margin-left: 1rem;
+}
+
+.logo img {
+  float:left;
+  margin-top: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+/* EDITOR NAV BAR ------------------------------------------------------------------------*/
+
+#editor-nav-bar-container {
+  margin-top: 0;
+  height: $editor-bar-height;
+  background-color: $color-white;
+}
+
+#editor-nav-bar {
+  height: $editor-bar__elements-height;
+  color: $color-grey-nav-bar;
+  font-size: $font-m;
+  width: $editor-bar-width;
+}
+
+.editor-nav-bar__a {
+  margin-top: $editor-bar__elements-margin-top;
+  display: inline-block;
+  width: $editor-bar__element-width;
+  height: $editor-bar__elements-height;
+  vertical-align: middle;
+  text-align: center;
+  line-height: $editor-bar__elements-height;
+
+  &:hover {
+    background-color: $color-grey-nav-bar;
+    color: $color-white;
+  }
+}
+
+.editor-nav-bar__a--active {
+  background-color: $color-main;
+  color: $color-white;
+}
+ 
+/* EDITOR DROP DOWN NAV ------------------------------------------------------------------------*/
+ 
+.drop-down-nav__a {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: block;
+  height: $editor-bar__elements-height;
+  line-height: $editor-bar__elements-height;
+  background-color: $color-white;
+  color: $color-grey-nav-bar;
+}
+ 
+.drop-down-nav__a:hover {
+  background-color: $color-grey-nav-bar;
+  color: $color-white;
+}
+
+/* EDITOR MAIN CONTENT ---------------------------------------------------------------------*/
+
+#editor-main-content {
+  width: $editor-bar-width;
+}
+
+/* SEARCH FIELD ---------------------------------------------------------------------*/
+
+#search-field {
+  border: 1px solid  $color-white;
+  -webkit-background-clip: padding-box; 
+  background-clip: padding-box;
+  border-radius: 0;
+  opacity: 0.75;
+  font-size: $font-m;
+  margin: $padding-sm 0 $padding-sm 0;
+  background: url(../../icons/search_icon.svg) no-repeat scroll $searchfield__icon--height $searchfield__icon--margin $color-white;
+  padding: 1rem 1rem 1rem 5rem;
+  width: $searchfield--width;
+  height: $searchfield--height;
+}
+
+#search-field:focus {
+  border: 1px solid #333333;
+  opacity: 1;
+}
+
+/* GENERAL ---------------------------------------------------------------------------------*/
+
+.center {
+  margin: auto;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.inner {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.clear {
+  clear: both;
+}
+
+.font-color-main {
+  color: $color-main;
+}
+
+.no-margin-left {
+  margin-left: 0;
+}

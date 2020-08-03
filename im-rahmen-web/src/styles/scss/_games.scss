@@ -1,0 +1,104 @@
+.game-detail__container {
+    margin: $game-content__container--margin-top $game-content__container--margin-right $game-content__container--margin-top $game-content__container--margin-left;
+    position: relative;
+    p {
+        display: inline-block;
+        font-size: $font-m;
+    }
+}
+
+.content-form__value-games {
+    width: $game-content__content-form-value--width;
+    margin-bottom: $main-content__content-form-key--margin-bottom;
+}
+
+/** DROP DOWN **/
+.drop-down-list__container--artworks-beacon {
+    height: 12rem;
+    overflow-y: scroll;
+
+    margin-top: $artwork__select-beacon-dropdown--margin-top;
+    margin-left: $artwork__select-beacon-dropdown--margin-left;
+    position: absolute;
+
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+    
+    z-index: 500; 
+}
+
+/** DROP DOWN **/
+.drop-down-list__container--games-gametype {
+    height: 12rem;
+    overflow-y: scroll;
+
+    margin-top: $game-content-form__select-type-dropdown--margin-top;
+    margin-left: $game-content-form__select-type-dropdown--margin-left;
+    position: absolute;
+
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3); 
+    
+    z-index: 500;
+}
+
+.drop-down-list__container--games-time {
+    height: 6rem;
+    overflow-y: scroll;
+
+    margin-top: $game-content-form__select-time-dropdown--margin-top;
+    margin-left: $game-content-form__select-type-dropdown--margin-left;
+    position: absolute;
+
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3); 
+    
+    z-index: 500;
+}
+
+.drop-down-list__container--games-trueOrFalse {
+    height: 4rem;
+    overflow-y: scroll;
+
+    margin-top: $game-content-form__select-time-dropdown--margin-top;
+    margin-left: $game-content-form__select-type-dropdown--margin-left;
+    position: absolute;
+
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3); 
+    
+    z-index: 500;
+}
+
+.drop-down-list {
+
+    width: $main-content__content-form-value--width + 0.8rem;
+    height: 2rem;
+    padding-left: 1rem;
+    background-color: $color-white;
+    border-bottom: solid 1px $color-white;
+    list-style: none;
+
+    font-size: $font-m;
+
+    &--active {
+        background-color: $color-grey-focus;
+        border-bottom: solid 1px $color-white;
+        list-style: none;
+    }
+
+    &:hover {
+        background-color: $color-grey-nav-bar;
+        color: $color-white;
+    }
+}
+
+.game-input-form__horizontal-separator {
+    height: 1px;
+    background-color: $color-grey-focus;
+    width: 100%;
+}

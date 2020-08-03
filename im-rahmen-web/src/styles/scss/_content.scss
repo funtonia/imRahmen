@@ -1,0 +1,510 @@
+/* MAIN CONTENT ------------------------------------------------------------------------*/
+
+#main-content {
+    box-sizing:border-box;
+    width:100%;
+    min-height: 40rem;
+    background-color: $color-white-transparent;
+    display: block;
+    color: $color-grey-font-content;
+}
+
+/* LIST ------------------------------------------------------------------------*/
+
+.list-container {
+    float: left;
+    box-sizing:border-box;
+    width: $sidebar-width;
+    border-right: 1px solid $color-grey-focus;
+    min-height: 40rem;
+    max-height: 40rem;
+    overflow-y: scroll;
+}
+
+.list-container-version {
+    box-sizing:border-box;
+    width: 100%;
+    min-height: 40rem;
+    max-height: 40rem;
+}
+
+.list-container__add-element {
+    height: $new-element--height;
+
+    &:hover {
+
+        background-color: $color-grey-nav-bar;
+
+        .list-container__add-element-image {
+            fill: $color-white;
+        }
+
+        .list-container__add-element-image-games {
+            fill: $color-white;
+        }
+
+        .list-container__add-element-text {
+            color: $color-white;
+        }
+    }
+}
+
+.list-container__add-element-image {
+    height: $new-element__image--height;
+    margin: 0 $padding-sm 0 $new-element__image--margin-left;
+    fill: #333333;
+}
+
+.list-container__add-element-text {
+    font-size: $font-s;
+    color: #333333;
+}
+
+.list-container-games {
+    float: left;
+    width: $main-content--width;
+    margin-left: -$main-content--padding-bottom;
+}
+
+.list-container__add-element-image-games {
+    height: $new-element__image--height;
+    margin: 0 $padding-sm 0 $main-content__add-games--padding-left;
+    fill: #333333;
+}
+
+/* LIST ELEMENT ------------------------------------------------------------------------*/
+
+.list__li {
+    height: $list-element--height;
+    clear: both;
+    list-style: none;
+}
+
+.list__li-version {
+    height: $list-element--height;
+    clear: both;
+    list-style: none;
+}
+
+.list__li--active {
+    background-color: #ccccccc0;
+}
+
+li.list__li:hover {
+    background-color: $color-grey-nav-bar;
+    color: $color-white;
+
+    .list__game-element--more-options-button--image{
+        fill: $color-white;
+    }
+
+    .list__circle--image, .list__circle--image-selected{
+        fill: $color-white; 
+    }
+}
+
+.list__circle {
+    height: $list-element__circle--height;
+    width: $list-element__circle--height;
+    margin-left: $list-element__circle--margin-left;
+}
+
+.list__circle--image:hover {
+    fill: $color-main !important; 
+}
+
+.list__circle-games {
+    height: $list-element__circle--height;
+    width: $list-element__circle--height;
+    margin-left: $main-content__add-games--padding-left;
+}
+
+.list__image {
+    height: $list-element__image--height;
+    width: $list-element__image--height;
+    background-position: center center;
+    background-size: cover;
+    margin-left: $padding-sm;
+}
+
+.list__image-version {
+    height: $list-element__image--height;
+    width: $list-element__image--height;
+    background-position: center center;
+    background-size: cover;
+    margin-left: 0;
+}
+
+.list__element-text {
+    margin-left: $padding-sm;
+}
+
+.list__element-text-version {
+    margin-left: $version-version-list-element--margin-left;
+    width: $version-version-list-element-width;
+    display: inline-block;
+}
+
+.list__element-text-version--beacon {
+    margin-left: $version-version-list-element--margin-left;
+    width: $version-version-list-element-width--beacon;
+    display: inline-block;
+}
+
+.list__element-name {
+    font-size: $font-m;
+    margin-bottom: 0.125rem;
+}
+
+.list__element-major {
+    font-size: $font-s;
+}
+
+/* BEACON IMAGE LIST ------------------------------------------------------------------------*/
+
+.beacon-image-list__front {
+    margin-left: - $beacon-list__image--height;
+    height: $beacon-list__image--height;
+}
+
+/* CONTENT DETAIL ------------------------------------------------------------------------*/
+
+.main-content__detail {
+    width: $main-content--width;
+    box-sizing: border-box;
+    float: left;
+    padding: $main-content--padding-top $main-content--padding-right $main-content--padding-bottom $main-content--padding-bottom;
+    min-height: 40rem;
+    max-height: 40rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.main-content__detail-info-part {
+    margin-right: $main-content--padding-right;
+    margin-bottom: $main-content__content-form-key--margin-bottom;
+    width: 100%;
+}
+
+.main-content__new-game-text {
+    vertical-align: middle;
+}
+
+.main-content__new-game-image {
+    vertical-align: middle;
+}
+
+.main-content__more-options-button {
+    width: $new-element__image--height;
+    height: $new-element__image--height;
+
+    &:hover .main-content__more-options-button--image{
+        fill: $color-grey-font-content;
+    }
+}
+
+.main-content__more-options-button--image{
+    fill: $color-grey-nav-bar;
+}
+
+#more-options-drop-down {
+    margin-top: $more-options-drop-down--margin-top;
+}
+
+.more-options-drop-down__element {
+    position: relative;
+    width: $more-options-drop-down__element--width;
+    height: $more-options-drop-down__element--height;
+    background-color: $color-white;
+    color: $color-grey-font-content;
+    line-height: $more-options-drop-down__element--height;
+    padding-left: $padding-sssm;
+    font-size: $font-m;
+    margin-left: $more-options-drop-down--margin-left;
+    //margin-top: $more-options-drop-down--margin-top;
+
+    &:hover {
+        background-color: $color-grey-nav-bar;
+        color: $color-white;
+    }
+}
+
+/* BEACON IMAGE CONTENT ------------------------------------------------------------------------*/
+
+.beacon-image__front {
+    margin-left: -$beacon-content__image--height;
+    height: $beacon-content__image--height;
+    width: $beacon-content__image--height;
+}
+
+.beacon-image__change-button {
+    position: absolute ;
+    width: $artwork__image--height;
+    height: $beacon-content__change-color-button--height;
+    margin-top: 9rem;
+    background-color: $color-white-transparent-button;
+    font-size: $font-m;
+}
+
+.beacon-image__change-button p{
+    color: $color-main;
+    width: $artwork__image--height;
+    text-align: center
+}
+
+/* INPUT FORM ------------------------------------------------------------------------*/
+
+.input-form {
+    margin-left: $main-content__content-form--margin-left;
+    font-size: $font-m;
+    width: fit-content;
+}
+
+.input-form p {
+    width: $main-content__content-form-key--width;
+    display: inline-block;
+    margin-bottom: $main-content__content-form-key--margin-bottom;
+
+    font-size: $font-m;
+}
+
+.input-form input {
+    width: $main-content__content-form-value--width;
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-size: $font-m;
+
+    &:enabled {
+        border-bottom: 1px solid $color-input-line;
+    }
+
+    &:hover:enabled {
+        border-bottom: 1px solid $color-grey-nav-bar;
+    }
+
+    &:focus {
+        border-bottom: 1px solid $color-main;
+    }
+
+    &::placeholder {
+        color: #bbbbbb;
+    }
+}
+
+.game-input-form {
+    margin-left: $main-content__content-form--margin-left;
+    font-size: $font-m;
+    width: fit-content;
+
+    p {
+        width: $main-content__content-form-key--width;
+        display: inline-block;
+        margin-bottom: $main-content__content-form-key--margin-bottom;
+    
+        font-size: $font-m;
+    }
+
+    input {
+        width: $main-content__content-form-game-value--width;
+        display: inline-block;
+        border: 0;
+        outline: 0;
+        background: transparent;
+        font-size: $font-m;
+    
+        &:enabled {
+            border-bottom: 1px solid $color-input-line;
+        }
+    
+        &:hover:enabled {
+            border-bottom: 1px solid $color-grey-nav-bar;
+        }
+    
+        &:focus {
+            border-bottom: 1px solid $color-main;
+        }
+    
+        &::placeholder {
+            color: #bbbbbb;
+        }
+    }
+}
+
+.input-form_bottom-part {
+    margin-top: $main-content__content-form-key--margin-bottom;
+    width: 100%;
+}
+
+.input-form_bottom-part p {
+    width: $main-content__content-form-key--width;
+    margin-bottom: 0.5rem;
+    font-size: $font-m;
+    margin-left: 0.25rem;
+}
+
+.input-form_bottom-part textarea {
+    border: 1px solid $color-input-line;
+    background: transparent;
+    font-size: $font-m;
+    padding: 0.25rem;
+    width: 100%;
+
+    box-sizing:border-box;
+}
+
+.input-form__submit-button {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background: transparent;
+    font-size: $font-m;
+    color: $color-main;
+    height: $input-form__submit-button--height;
+    border: 1px solid $color-main;
+
+    &:hover {
+
+        background-color: $color-main;
+
+        color: white;    
+    }
+}
+
+/* CONTENT FORM ------------------------------------------------------------------------*/
+
+.content-form {
+    margin-left: $main-content__content-form--margin-left;
+    font-size: $font-m;
+}
+
+.content-form-version {
+    margin-left: 0;
+    font-size: $font-m;
+
+    p {
+        display: inline-block;
+    }
+}
+
+.content-form p {
+    display: inline-block;
+}
+
+.content-form__key {
+    font-size: $font-m;
+    width: $main-content__content-form-key--width;
+    margin-bottom: $main-content__content-form-key--margin-bottom;
+    vertical-align: top;
+}
+
+.content-form__value {
+    width: $main-content__content-form-value--width;
+    margin-bottom: $main-content__content-form-key--margin-bottom;
+}
+
+.content-form__info-value {
+    font-size: $font-m;
+    text-align: justify;
+    margin-bottom: $main-content__content-form-key--margin-bottom;
+}
+
+/* BEACON DROP DOWN LIST ------------------------------------------------------------------------*/
+
+.beacon-drop-down-list__container {
+    margin-top: -3.3rem;
+    position: absolute;
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.3);
+    
+    z-index: 500;
+}
+
+.beacon-drop-down-list {
+    width: 12rem;
+    height: 2rem;
+    background-color: $color-white;
+    border-bottom: solid 1px $color-white;
+    list-style: none;
+}
+
+.beacon-drop-down-list:hover {
+    background-color: $color-grey-nav-bar;
+    color: $color-white;
+}
+
+.beacon-drop-down-list--active {
+    width: 12rem;
+    height: 2rem;
+    background-color: $color-grey-focus;
+    border-bottom: solid 1px $color-white;
+    list-style: none;
+}
+
+.beacon-drop-down-list p, .beacon-drop-down-list--active p {
+    margin-left: 3rem;
+}
+
+.beacon-drop-down-list__color-square {
+    height: 2rem;
+    width: 2rem;
+    border-right: solid 1px $color-white;
+    float: left;
+}
+
+/* ARTWORK IMAGE UPLOAD */
+
+.artwork-image__container {
+    position: relative;
+    font-size: $font-m;
+    text-align: center;
+    color: #333333;
+    line-height: 10rem;
+}
+
+.artwork-image__image {
+    width: $artwork__image--height; 
+    height: $artwork__image--height;
+    background-position: center center;
+    background-size: cover;
+}
+
+.artwork_image__button-container {
+    margin-top: 0.2rem;
+}
+
+.artwork-image__file-input {
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    padding: 0.6rem;
+    width: 10rem;
+    box-sizing:border-box;
+}
+
+.input-form__change-image-button {
+    font-size: $font-m;
+    color: $color-main;
+    padding: 0.4rem;
+    width: 10rem;
+    text-align: center;
+    display: block;
+    background: transparent;
+
+    &:disabled {
+        color: #CECED1;
+    }
+}
+
+/** ARTWORK NEW GAME **/ 
+.list__game-element--more-options-button {
+    width: $new-element__image--height;
+    height: $new-element__image--height;
+}
+
+.list__game-element--more-options-button--image {
+    fill: $color-grey-nav-bar;
+}
+
